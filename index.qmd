@@ -1,0 +1,80 @@
+---
+title: "Quarto Simple Example"
+author: "Miquel Perello-Nieto"
+date: "March 29, 2023"
+toc: true
+jupyter: python3
+number-sections: true
+bibliography: references.bib
+
+chapters:
+  - authoring.qmd
+
+format:
+  html: 
+    code-fold: true
+    html-math-method: katex
+  pdf:
+    geometry: 
+      - top=30mm
+      - left=30mm
+  docx: default
+---
+
+# Introduction {.unnumbered}
+
+This is a reference @sokol2021you
+
+# Callout notes
+
+There are five types of call out notes, which can even hide the content
+
+::: {.callout-note}
+# You can add a title to the note with a hastag #
+This is a note callout
+:::
+
+::: {.callout-tip}
+This is a tip callout
+:::
+
+::: {.callout-warning}
+This is a warning callout
+:::
+
+::: {.callout-caution}
+This is a caution callout
+:::
+
+::: {.callout-important}
+This is a important callout
+:::
+
+
+It is possible to modify the callout including different header text, and
+hidding the content in a foldable box.
+
+::: {.callout-note}
+# You can add a title to the note with a hastag \#
+This is a note callout with a different title
+:::
+
+::: {.callout-tip collapse="true"}
+# You can hidde the content with collapse="true"
+This is a note callout with a different title and collapsed.
+:::
+
+
+
+# Maths and equations
+
+$E = m \cdot c^2$
+
+# Python plots
+
+```{python}
+import matplotlib.pyplot as plt
+
+plt.plot([0, 1, 2, 3], [1, 3, 2, 5])
+```
+# References
