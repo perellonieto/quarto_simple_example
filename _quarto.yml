@@ -3,12 +3,17 @@ project:
 
 website:
   title: "Quarto Simple Example"
+  repo-url: https://github.com/perellonieto/quarto_simple_example
+  repo-branch: main
   repo-actions: [edit, issue]
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - index.qmd
+      - calibration.qmd
       - about.qmd
+    
   page-footer:
     left: |
       Quarto Simple Example is written by Miquel Perello Nieto.
@@ -21,3 +26,4 @@ format:
       light: yeti
       dark: superhero
     toc: true
+    downloads: [pdf, docx]

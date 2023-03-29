@@ -1,14 +1,10 @@
 ---
-title: "Quarto Simple Example"
+title: "Home"
 author: "Miquel Perello-Nieto"
 date: "March 29, 2023"
-toc: true
 jupyter: python3
-number-sections: true
 bibliography: references.bib
-
-chapters:
-  - authoring.qmd
+downloads: [pdf, docx]
 
 format:
   html: 
