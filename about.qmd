@@ -1,0 +1,4 @@
+# About
+
+This is a website to test the functionalities of Quarto, and provides a simple
+template that can be used to create the material for an online course.
