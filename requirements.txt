@@ -1,3 +1,6 @@
+wheel
 numpy
-matplotlib
+matplotlib==3.3.0
 jupyter
+pycalib
+tabulate

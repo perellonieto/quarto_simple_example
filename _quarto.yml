@@ -11,12 +11,12 @@ website:
     search: true
     contents:
       - index.qmd
-      - calibration.qmd
+      - calibration/calibration.qmd
       - about.qmd
     
   page-footer:
     left: |
-      Quarto Simple Example is written by Miquel Perello Nieto.
+      Copyright 2023, Miquel Perello Nieto.
     right: |
       This website was built with <a href="https://quarto.org/">Quarto</a>.
 
@@ -27,3 +27,24 @@ format:
       dark: superhero
     toc: true
     downloads: [pdf, docx]
+    code-fold: true
+    html-math-method: katex
+    page-layout: full
+    grid:
+      sidebar-width: 500px
+  pdf:
+    geometry: 
+      - top=30mm
+      - left=30mm
+  docx: default
+  revealjs:
+    smaller: true
+    scrollable: true
+    logo: "images/TAILOR logo - full-color rgb.svg"
+    footer: "These slides are part of a MOOC on Trustworthy AI by The TAILOR Network"
+    center: true
+    slide-number: true
+    incremental: true
+    number-depth: 2
+    slide-level: 3
+    show-slide-number: "all"

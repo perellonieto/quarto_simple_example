@@ -4,18 +4,15 @@ author: "Miquel Perello-Nieto"
 date: "March 29, 2023"
 jupyter: python3
 bibliography: references.bib
-downloads: [pdf, docx]
-
-format:
-  html: 
-    code-fold: true
-    html-math-method: katex
-  pdf:
-    geometry: 
-      - top=30mm
-      - left=30mm
-  docx: default
 ---
+
+::: {.content-visible when-format="html"}
+
+<a href="/slides/index.html"
+target="_blank"><img src="https://img.shields.io/badge/slides-index-yellow"></a>
+<a href="index.pdf" target="_blank">link to the pdf</a>
+
+:::
 
 # Introduction {.unnumbered}
 
