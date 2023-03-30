@@ -32,11 +32,6 @@ format:
     page-layout: full
     grid:
       sidebar-width: 500px
-  pdf:
-    geometry: 
-      - top=30mm
-      - left=30mm
-  docx: default
   revealjs:
     smaller: true
     scrollable: true
@@ -48,3 +43,8 @@ format:
     number-depth: 2
     slide-level: 3
     show-slide-number: "all"
+    #  pdf:
+    #    geometry: 
+    #      - top=30mm
+    #      - left=30mm
+    #  docx: default
