@@ -31,10 +31,11 @@ jobs:
 
       # To publish to Netlify, RStudio Connect, or GitHub Pages, uncomment
       # the appropriate block below
-      
-      - name: Publish to GitHub Pages (and render)
+      - name: Render Quarto # MPN: I added this step
         run: |
           ./render.sh
+      
+      - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
