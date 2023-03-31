@@ -1,4 +1,7 @@
 *.swp
+*.log
+*.aux
+*.tex
 .quarto/
 index.html
 index_files/
