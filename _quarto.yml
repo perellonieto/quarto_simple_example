@@ -32,19 +32,3 @@ format:
     page-layout: full
     grid:
       sidebar-width: 500px
-  revealjs:
-    smaller: true
-    scrollable: true
-    logo: "images/TAILOR logo - full-color rgb.svg"
-    footer: "These slides are part of a MOOC on Trustworthy AI by The TAILOR Network"
-    center: true
-    slide-number: true
-    incremental: true
-    number-depth: 2
-    slide-level: 3
-    show-slide-number: "all"
-    #  pdf:
-    #    geometry: 
-    #      - top=30mm
-    #      - left=30mm
-    #  docx: default

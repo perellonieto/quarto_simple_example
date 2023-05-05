@@ -24,14 +24,6 @@ author:
 bibliography: references.bib
 ---
 
-::: {.content-visible when-format="html"}
-
-<a href="/slides/calibration/calibration.html"
-target="_blank"><img
-src="https://img.shields.io/badge/slides-calibration-yellow"></a>
-
-:::
-
 {{< include definitions.tex >}}
 
 # Taking inspiration from forecasting

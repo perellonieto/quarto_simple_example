@@ -6,14 +6,6 @@ jupyter: python3
 bibliography: references.bib
 ---
 
-::: {.content-visible when-format="html"}
-
-<a href="/slides/index.html"
-target="_blank"><img src="https://img.shields.io/badge/slides-index-yellow"></a>
-<a href="index.pdf" target="_blank">link to the pdf</a>
-
-:::
-
 # Introduction {.unnumbered}
 
 This is a reference @sokol2021you
@@ -70,4 +62,51 @@ import matplotlib.pyplot as plt
 
 plt.plot([0, 1, 2, 3], [1, 3, 2, 5])
 ```
+
+# Inline runnable code
+
+It is possible to run code from the same browser using Thebe, which starts a
+kernel in MyBinder and is able to run the provided code. It requires the
+activation of the kernel via a button, and then the code in the text cell can
+be changed and run.
+
+<!-- Configure and load Thebe !-->
+<script type="text/x-thebe-config">
+  {
+    requestKernel: true,
+    binderOptions: {
+      repo: "binder-examples/requirements",
+    },
+  }
+</script>
+<script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
+
+
+<div class="thebe-activate"></div>
+
+<div class="thebe-status"></div>
+
+<pre data-executable="true" data-language="python" style="background:#BBB">
+%matplotlib inline
+import matplotlib.pyplot as plt
+
+plt.plot([0, 1, 2, 3], [1, 3, 2, 5])
+</pre>
+
+The previous button is the default, provided via a div class, but it can be
+adjusted as desired.
+
+<script>
+var bootstrapThebe = function() {
+    thebelab.bootstrap();
+}
+document.querySelector("#activateButton").addEventListener('click',
+bootstrapThebe)
+</script>
+
+<button id="activateButton"  style="width: 100px; height: 30px; font-size:
+1em;">Start</button>
+
+
+
 # References
