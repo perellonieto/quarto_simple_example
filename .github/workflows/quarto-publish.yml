@@ -31,14 +31,15 @@ jobs:
 
       # To publish to Netlify, RStudio Connect, or GitHub Pages, uncomment
       # the appropriate block below
-      - name: Render Quarto # MPN: I added this step
-        run: |
-          ./render.sh
+      # 22/05/2023: Removed render for the moment
+      #- name: Render Quarto # MPN: I added this step
+      #  run: |
+      #    ./render.sh
       
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
-          render: "false"
+          render: "true"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
